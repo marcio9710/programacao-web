@@ -1,0 +1,8 @@
+1 - Fazer um  site sobre algo que você odeia contendo, no mínimo:
+2 - 2 níveis de H
+3 - Parágrafos, sublinhadom, negrito e italico
+4 - Imagens
+5 - Tabelas
+6 - Lista Ordenada e não ordenada 
+7 - Links para as seções na  própria página 
+8 - Links para um site externo
