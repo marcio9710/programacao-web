@@ -1,0 +1,76 @@
+/*
+seletor {
+    propriedade1: valor
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Indie+Flower&family=Satisfy&display=swap');
+
+body{
+    /*A cor de fundo */
+    background-color: #fefae0;
+}
+
+h1{
+    /*A cor da fonte /texto */
+    color: #bc6c25;
+    font-family: 'Great Vibes';
+}
+
+h2{
+    color: #dda15e;
+    font-family: 'satisfy';
+}
+
+h3{
+    color: #dda15e;
+}
+
+p{
+    color: blueviolet;
+}
+
+#primeiro{
+    text-align: center;
+    font-size: 18px;    
+    color: #bc6c25;
+}
+
+.impar{
+    font-weight: 700;
+}
+
+.par{
+    font-style: italic;
+}
+
+div#menu a{
+    background-color: #dda15e;
+    color: #fefae0;
+    display: inline-block; /*confia*/
+    padding: 5px 20px; /*espaçamento interno*/
+    margin: 5px; /*espaçamento  externo*/
+    text-decoration: none; /*retira o sublinhado*/
+    /*border-radius: 5px; /*borda arredondada */
+    transition-duration: 0.5s;
+}
+
+/*Estado quando o mouse esta sobre o elento */
+div a:hover{
+    background-color: #bc6c25;
+    border-radius: 5px;
+}
+
+img{
+    filter: grayscale(100%);
+    transition-duration: 1s;
+}
+img:hover{
+    filter: grayscale(0%);
+}
+
+/*Um elemento com ID especifico (aatributo id no HTML)
+#idDoelemento{
+    margin: 10px;
+}
+*/
+
