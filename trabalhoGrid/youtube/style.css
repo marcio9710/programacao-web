@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+}
+
+#site{
+    display: grid;
+    /*
+    grid-template-columns: auto auto;
+    grid-template-columns:30% 70%;
+    grid-template-columns: auto auto;
+    */
+    grid-template-columns: auto auto auto auto;
+
+    grid-template-areas:
+    'topo           topo           topo           topo'
+    'areaPrincipal  areaPrincipal  areaPrincipal  areaSusgestao'
+    'rodape         rodape         rodape         rodape'
+    ; 
+
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#site div{
+    padding: 1em;
+    text-align: center;
+}
+
+#topo{
+    background-color: aquamarine;
+    grid-area: topo;
+    height: 15px;
+}
+
+#areaPrincipal{
+    background-color: rgb(255, 150, 127);
+    grid-area: areaPrincipal;
+    height: 1200px;
+    width: 800px;
+
+}
+
+#areaPrincipal #video{
+    background-color: rgb(255, 251, 127);
+    height: 400px;
+    width: 750px;
+}
+
+#areaPrincipal #infoVideoprincipal{
+    background-color: rgb(14, 219, 85);
+    height: 70px;
+    width: 750px;
+}
+
+#areaPrincipal #descricao{
+    background-color: rgb(7, 228, 173);
+    height: 70px;
+    width: 750px;
+}
+
+#areaPrincipal #comentario{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 'fotoMini comentar' ;
+
+    background-color: rgb(77, 156, 137);
+    height: 40px;
+    width: 750px;
+}
+
+#areaPrincipal .fotoMini {
+    
+    grid-area: fotoMini;
+    background-color: rgb(14, 185, 51);
+
+    height: 20px;
+    width: 60px;
+}
+
+#areaPrincipal #comentar {
+    
+    grid-area:comentar;
+    background-color: rgb(8, 243, 59);
+
+    height: 20px;
+    width: 550px;
+}
+
+#areaPrincipal .listacomentarios{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 'fotoMini comentarios';
+
+    
+    background-color: rgb(2, 91, 20);
+    height: 70px;
+    width: 750px;
+}
+
+#areaPrincipal .comentarios {
+    
+    grid-area:comentarios;
+    background-color: rgb(69, 163, 51);
+    height: 20px;
+    width: 550px;
+}
+
+
+
+
+
+
+#areaSusgestao {
+    background-color: rgba(6, 230, 246, 0.963);
+    grid-area: areaSusgestao;
+    height: 1200px;
+    width: 340px;
+}
+.sugestao{
+    display: grid;
+    grid-template-columns:area area area;
+    grid-template-areas:
+    'videosug       videosug       infoVideo'
+    
+    ;
+
+    margin: 5px;
+    padding: 10px;
+    background-color: rgba(4, 120, 128, 0.963);
+    grid-area: sugestao;
+    height: 110px;
+    width: 320px;
+}
+
+.videosug{
+    background-color: rgba(77, 157, 173, 0.963);
+    grid-area: videosug;
+    height: 80px;
+    width: 120px;
+}
+
+.infoVideo{
+
+    background-color: rgba(26, 157, 148, 0.963);
+    grid-area: infoVideo;
+    height: 80px;
+    width: 120px;
+}
