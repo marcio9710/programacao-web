@@ -1,25 +1,29 @@
-
 body{
     margin: 0;
 }
 
  #site{
-    display: grid;
+    background-color: rgb(202, 140, 6);
+    width: 72vw;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+    
     /*
     grid-template-columns: auto auto;
     grid-template-columns:30% 70%;
     grid-template-columns: auto auto;*/
     
-    grid-template-columns: auto auto auto auto;
+    display: grid;
+    grid-template-columns: auto  ;
 
     grid-template-areas:
-    'topo           topo                topo                 topo'
-    'areaperfil     areaperfil          areaperfil           areaperfil'
-    'story          story               story                story '
-    'areaPrincipal  areaPrincipal       areaPrincipal        areaPrincipal' ;
+    'topo'
+    'areaPerfil'
+    'areaStory'
+    'galeria' ;
     
-    justify-content: center;
-    margin: 0 auto;
+    
 }
 
 #topo{
@@ -27,210 +31,101 @@ body{
     background-color: aquamarine;
     grid-area: topo;
 
-    height: 15px;
-    width: 60em;
-    padding: 1em;
+    height: 5vh;
+    width: 70vw;
+    
  
 }
 
-#areaperfil{
-    background-color: rgb(7, 230, 18);
-    width: 70%;
+
+
+
+#areaPerfil{
+    background-color: rgb(155, 142, 5);
+    width: 55vw;
+    height: 40vh;
+    padding: 1em;
     
-    grid-template-columns: 35% 65%;
-    grid-area: fotoPerfil;
+    grid-template-rows: 35%  auto ;
+    grid-area: areaPerfil;
     display: grid;
     grid-template-areas:
-    'fotoPerfil   nomeSeguirMensagem   nomeSeguirMensagem    nomeSeguirMensagem'
-    'fotoPerfil   descricao            descricao             descricao';
+    'fotoPerfil   nomeSeguirMensagem'
+    'fotoPerfil   bio                ';
     
 
 }
 
+
+
 #fotoPerfil{
-    background-color: black;
-    width: 200px;
-    height: 200px;
+    background-color: rgb(0, 210, 28);
+    width: 18vw;
+    height: 18vw;
 
     grid-area: fotoPerfil;
 }
 
 #nomeSeguirMensagem{
     background-color: rgb(8, 226, 255);
-    width: 400px;
-    height: 70px;
+    width: 25em;
+    height: 5em;
 
     grid-area: nomeSeguirMensagem;
 }
 
-#descricao{
-    
+#bio{   
     background-color: rgb(245, 46, 1);
-    grid-area: descricao;
-    width: 400px;
-    height: 70px;
+    width: 25em;
+    height: 9em;
+    
+    grid-area: bio;
 
 }
 
 
-#areaPrincipal{
 
-    align-items: center;
-    background-color: rgb(255, 150, 127);
-    grid-area: areaPrincipal;
-    height: 200em;
-    width: 60em;
 
+#areaStory{
+    background-color: rgb(215, 7, 230);
+    height: 12vh;
+    width: 70vw;
+    margin: 1em 0em 1em 0em;
     
     
+    
+    grid-template-columns: 10% 10% 10% 10% 10%  ; 
+    grid-area: areaStory;
+    display: grid;
+   
 }
+
 .story{
-    background-color: rgb(10, 207, 221);
-    width: 20px;
-    height: 35px;
-    grid-area: story;
+    background-color: rgb(10, 221, 31);
+    width: 4em;
+    height: 4em;
+    margin: 0.5em 0.5em;
+    
 }
 
 
 
+
+
+#galeria{
+    background-color: rgb(133, 186, 8);
+
+    grid-area: galeria;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+   
+
+}
 .fotos{
     background-color: rgb(204, 240, 5);
-    width: 90px;
-    height: 90px;
-    padding: 5em;
-    margin: 1em;
-
-    grid-area: fotos;
+    width: 15em;
+    height: 15em;
+    margin: 0.5em;
 
     
 }
-
-
-
-
-/*
-#site div{
-    padding: 1em;
-    text-align: center;
-}
-
-#topo{
-    background-color: aquamarine;
-    grid-area: topo;
-    height: 15px;
-}
-
-#areaPrincipal{
-    background-color: rgb(255, 150, 127);
-    grid-area: areaPrincipal;
-    height: 1200px;
-    width: 800px;
-
-}
-
-#areaPrincipal #video{
-    background-color: rgb(255, 251, 127);
-    height: 400px;
-    width: 750px;
-}
-
-#areaPrincipal #infoVideoprincipal{
-    background-color: rgb(14, 219, 85);
-    height: 70px;
-    width: 750px;
-}
-
-#areaPrincipal #descricao{
-    background-color: rgb(7, 228, 173);
-    height: 70px;
-    width: 750px;
-}
-
-#areaPrincipal #comentario{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-areas: 'fotoMini comentar' ;
-
-    background-color: rgb(77, 156, 137);
-    height: 40px;
-    width: 750px;
-}
-
-#areaPrincipal .fotoMini {
-    
-    grid-area: fotoMini;
-    background-color: rgb(14, 185, 51);
-
-    height: 20px;
-    width: 60px;
-}
-
-#areaPrincipal #comentar {
-    
-    grid-area:comentar;
-    background-color: rgb(8, 243, 59);
-
-    height: 20px;
-    width: 550px;
-}
-
-#areaPrincipal .listacomentarios{
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-areas: 'fotoMini comentarios';
-
-    
-    background-color: rgb(2, 91, 20);
-    height: 70px;
-    width: 750px;
-}
-
-#areaPrincipal .comentarios {
-    
-    grid-area:comentarios;
-    background-color: rgb(69, 163, 51);
-    height: 20px;
-    width: 550px;
-}
-
-
-
-
-
-
-#areaSusgestao {
-    background-color: rgba(6, 230, 246, 0.963);
-    grid-area: areaSusgestao;
-    height: 1200px;
-    width: 340px;
-}
-.sugestao{
-    display: grid;
-    grid-template-columns:area area area;
-    grid-template-areas:
-    'videosug       videosug       infoVideo'
-    
-    ;
-
-    margin: 5px;
-    padding: 10px;
-    background-color: rgba(4, 120, 128, 0.963);
-    grid-area: sugestao;
-    height: 110px;
-    width: 320px;
-}
-
-.videosug{
-    background-color: rgba(77, 157, 173, 0.963);
-    grid-area: videosug;
-    height: 80px;
-    width: 120px;
-}
-
-.infoVideo{
-
-    background-color: rgba(26, 157, 148, 0.963);
-    grid-area: infoVideo;
-    height: 80px;
-    width: 120px;
-} */
